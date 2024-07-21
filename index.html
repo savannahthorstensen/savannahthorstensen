@@ -44,6 +44,20 @@ body {
   font-family: "Lato", sans-serif
 }
 .mySlides {display: none}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+  
 </style>
 </head>
 <body>
@@ -110,6 +124,7 @@ body {
         <i class="fa fa-phone" style="width:30px"></i> Phone: +16612386905<br>
         <i class="fa fa-envelope" style="width:30px"> </i> Email: savannahthorstensen9@gmail.com<br>
       </div>
+      <img src="https://savannahthorstensen.github.io/savannahthorstensen/cat.jpg" class="rotate" width="100" height="100" />
   </div>
   
 <!-- End Page Content -->
