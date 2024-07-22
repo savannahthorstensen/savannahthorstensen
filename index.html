@@ -1,172 +1,174 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-<title>Savannah Thorstensen</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-  
-
-
-  
-<style>
-.w3-bar {
-  background-color: #EA785B;
-  color: #000000; /* background color terra cotta text color black */
-}
-
-/* navbar hover */
-.w3-bar a:hover {
-  background-color: #F0BBB4; /* spanish pink */
-  color: #000000; 
-}
-
-
-h1, h2 {
-  font-family: 'Lora', serif; /* font for my name and headings */
-}
-  h1{
-    color: #F15F61 /*Carnation*/
-  }
-  h2{
-    color: #EA785B; /*Terra Cotta*/
-  }
-  
-body {
-  background-color: #FFF3DB;
-  font-family: "Lato", sans-serif
-}
-.mySlides {display: none}
-
-.rotate {
-  animation: rotation 8s infinite linear;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-  
-</style>
-</head>
-<body>
-  
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
-    <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
-  <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
-  <a href="#resume" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESUME</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-</div>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- The About Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" style="font-size:1600px">
-    <h1 class="w3-wide">Savannah Thorstensen </h1>
-  </div>
-  
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
-    <h2 class="w3-wide">ABOUT</h2>
-    <p class="w3-justify">I like listening to the cats in my wall</p>
-  </div>
-  
-
-  <!-- The Projects Section -->
- <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="projects">
-    <h2 class="w3-wide">PROJECTS</h2>
-    <p class="w3-justify">PROJECTS</p>
-  </div>
-
-   <!-- The Resume Section -->
- <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="resume">
-   <h2 class="w3-wide">RESUME</h2>
-   <a href="https://savannahthorstensen.github.io/savannahthorstensen/resume.pdf">
-     <img class="img-fluid" alt="open pdf" src="https://savannahthorstensen.github.io/savannahthorstensen/resume.pdf" width="100%" height="100%"/>
-   </a>
+  <head>
     
+    <title>Savannah Thorstensen</title>
     
-  </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Los Angeles, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +16612386905<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: savannahthorstensen9@gmail.com<br>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+
+    <style>
+      
+      .w3-bar {
+        background-color: #EA785B;
+        color: #000000; /* Background color terra cotta text color black */
+      }
+
+      /* Navbar hover */
+      .w3-bar a:hover {
+        background-color: #F0BBB4; /* Spanish pink */
+        color: #000000; 
+      }
+
+
+      h1, h2 {
+        font-family: 'Lora', serif; /* Font for my name and headings */
+      }
+      h1{
+        color: #F15F61 /*Carnation*/
+      }
+      h2{
+        color: #EA785B; /*Terra Cotta*/
+      }
+  
+      body {
+        background-color: #FFF3DB;
+        font-family: "Lato", sans-serif
+      }
+      
+      .mySlides {display: none}
+
+      /* Rotating Image */
+      .rotate {
+        animation: rotation 8s infinite linear;
+      }
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+  
+    </style>
+  
+  </head>
+  
+  <body>
+    
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+        <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
       </div>
-      <img src="https://savannahthorstensen.github.io/savannahthorstensen/Sav.jpg" class="rotate" width="100" height="100" />
+      <a href="javascript:void(0)" class="w3-padding-large w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
   </div>
+    
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+      <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+      <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+      <a href="#resume" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESUME</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    </div>
+    
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+      <!-- The About Section -->
+      <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" style="font-size:1600px">
+        <h1 class="w3-wide">Savannah Thorstensen </h1>
+      </div>
   
-<!-- End Page Content -->
-</div>
+      <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+        <h2 class="w3-wide">ABOUT</h2>
+        <p class="w3-justify">I like listening to the cats in my wall</p>
+      </div>
 
+      <!-- The Projects Section -->
+      <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="projects">
+        <h2 class="w3-wide">PROJECTS</h2>
+        <p class="w3-justify">PROJECTS</p>
+      </div>
 
+      <!-- The Resume Section -->
+      <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="resume">
+        <h2 class="w3-wide">RESUME</h2>
+        <a href="https://savannahthorstensen.github.io/savannahthorstensen/resume.pdf">
+          <img class="img-fluid" alt="open pdf" src="https://savannahthorstensen.github.io/savannahthorstensen/resume.pdf" width="100%" height="100%"/>
+        </a>
+      </div>
 
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
+      <!-- The Contact Section -->
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center">CONTACT</h2>
+        <div class="w3-row w3-padding-32">
+          <div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker" style="width:30px"></i> Los Angeles, US<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +16612386905<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: savannahthorstensen9@gmail.com<br>
+          </div>
+          <img src="https://savannahthorstensen.github.io/savannahthorstensen/Sav.jpg" class="rotate" width="100" height="100" />
+        </div>
+  
+        <!-- End Page Content -->
+      </div>
+      
+      
+      <script>
+        // Automatic Slideshow - change image every 4 seconds
+        var myIndex = 0;
+        carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 4000);    
+        }
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal');
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        
+      </script>
 
-</body>
+  </body>
+
 </html>
