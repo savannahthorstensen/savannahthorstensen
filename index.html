@@ -124,6 +124,9 @@
             <i class="fa fa-envelope" style="width:30px"> </i> Email: savannahthorstensen9@gmail.com<br>
           </div>
         </div>
+
+        <img id="image" src="https://savannahthorstensen.github.io/savannahthorstensen/cheer.jpg" class="rotate" width="100" height="100" alt="image"/>
+        <button type="button" onclick="show()" id="btnID">Show Image</button>
         <!-- <img src="https://savannahthorstensen.github.io/savannahthorstensen/Sav.jpg" class="rotate" width="100" height="100" /> -->
         <!-- <img src="https://savannahthorstensen.github.io/savannahthorstensen/cheer.jpg" class="rotate" width="100" height="100" /> -->
   
@@ -164,7 +167,15 @@
             modal.style.display = "none";
           }
         }
-        
+
+        function show() {
+            /* Access image by id and change 
+            the display property to block*/
+            document.getElementById('image')
+                .style.display = "block";
+            document.getElementById('btnID')
+                .style.display = "none";
+        }
       </script>
 
   </body>
