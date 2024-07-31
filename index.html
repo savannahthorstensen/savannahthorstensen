@@ -26,7 +26,7 @@
       /* Navbar hover */
       .w3-bar a:hover {
         background-color: #F0BBB4; /* Spanish pink */
-        color: #000000; 
+        color: #F0BBB4; 
       }
 
       h1, h2 {
@@ -45,12 +45,22 @@
       }
       
       .mySlides {display: none}
-  
-    </style>
-  
-  </head>
-  
-  <body>
+      .center-container {
+      text-align: center;
+    }
+
+    .about-paragraph {
+      font-size: 16px; /* Default font size for small screens */
+    }
+
+    @media screen and (min-width: 768px) {
+      .about-paragraph {
+        font-size: 20px; /* bigger font for computer */
+      }
+    }
+  </style>
+</head>
+<body>
     
     <!-- Navbar -->
     <div class="w3-top">
@@ -73,7 +83,7 @@
     </div>
     
     <!-- Page content -->
-    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+    <div class="w3-content" style="margin-top:30px">
 
        <!-- The About Section -->
     <div class="w3-container w3-center w3-padding-64 center-container">
@@ -81,6 +91,8 @@
       <h1 class="w3-wide">Savannah Thorstensen</h1>
       <!-- Centered Image -->
       <img src="headShot1.png" alt="Savannah Thorstensen" style="width: 300px; height: auto; margin: 20px 0;">
+      
+      
       <!-- The About Section Title -->
       <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
         <h2 class="w3-wide">ABOUT</h2>
