@@ -174,60 +174,6 @@
        </div>
 </div>
           
--->
-      
-      <!-- The new Contact Section -->
-<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px;" id="contact">
-  <h2 class="w3-wide w3-center">CONTACT</h2>
-   <!--<div class="w3-row w3-padding-32">-->
-    <div class="w3-col m6 w3-large w3-margin-bottom">
-      <!-- Contact form -->
-      <form 
-        onsubmit="sendEmail(event)" 
-        class="w3-container w3-card-4 w3-padding-16" 
-        style="
-          background-color: #FFF3DB; 
-          border: none; 
-          max-width: 100%; 
-          display: inline-block;
-        "
-      >
-        <h3>Send Me an Email</h3>
-        <label for="subject">Subject:</label>
-        <input 
-          class="w3-input w3-border" 
-          type="text" 
-          id="subject" 
-          name="subject" 
-          placeholder="Enter subject" 
-          required 
-          style="background-color: #FFF3DB; border: 1px solid #EA785B;"
-        >
-        
-        <label for="message">Message:</label>
-        <textarea 
-          class="w3-input w3-border" 
-          id="message" 
-          name="message" 
-          rows="4" 
-          placeholder="Enter your message" 
-          required 
-          style="background-color: #FFF3DB; border: 1px solid #EA785B;"
-        ></textarea>
-        
-        <button 
-          class="w3-button w3-margin-top" 
-          type="submit" 
-          style="background-color: #EA785B;"
-        >
-          Send Email
-        </button>
-      </form>
-    <!--</div>-->
-  </div>
-</div>
-
-
 
        <script>
     function sendEmail(event) {
@@ -247,6 +193,74 @@
       }
     }
   </script>
+-->
+      <div class="contact-container">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form id="contactForm" onsubmit="sendEmail(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Email Subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div id="status"></div>
+            <div class="contact-info">
+                <p>Los Angeles, US | Phone: +16612386905</p>
+                <p>Email: savannahthorstensen9@gmail.com</p>
+            </div>
+        </div>
+    </div>
 
+    <script>
+        (function(){
+            emailjs.init("x6oiApG3xBFVIQABY");
+        })();
+
+        function sendEmail(event) {
+            event.preventDefault();
+            
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("message").value;
+            var statusDiv = document.getElementById("status");
+
+            var templateParams = {
+                from_name: name,
+                from_email: email,
+                subject: subject,
+                message: message
+            };
+
+            statusDiv.innerHTML = "Sending...";
+            statusDiv.style.color = "blue";
+
+            emailjs.send('service_5qmtguf', 'template_75kftao', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    statusDiv.innerHTML = "Message sent successfully!";
+                    statusDiv.style.color = "green";
+                    document.getElementById("contactForm").reset();
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    statusDiv.innerHTML = "Failed to send message. Please try again.";
+                    statusDiv.style.color = "red";
+                });
+        }
+    </script>
 </body>
 </html>
+
