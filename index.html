@@ -155,18 +155,38 @@
             <i class="fa fa-envelope" style="width:30px"> </i> Email: savannahthorstensen9@gmail.com<br>
           </div>
         </div>
+                <!-- Contact Form -->
+        <div class="w3-container">
+          <form onsubmit="sendEmail(event)" class="w3-container w3-card-4 w3-padding-16 w3-white">
+            <h3>Send Me an Email</h3>
+            <label for="subject">Subject:</label>
+            <input class="w3-input w3-border" type="text" id="subject" name="subject" placeholder="Enter subject" required>
 
-        <script>
-          function myFunction() {
-            var x = document.getElementById("navDemo");
-            if (x.className.indexOf("w3-show") == -1) {
-              x.className += " w3-show";
-            } else { 
-              x.className = x.className.replace(" w3-show", "");
-            }
-          }
-        </script>
+            <label for="message">Message:</label>
+            <textarea class="w3-input w3-border" id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
 
-  </body>
+            <button class="w3-button w3-teal w3-margin-top" type="submit">Send Email</button>
+          </form>
+        </div>
 
+       <script>
+    function sendEmail(event) {
+      event.preventDefault(); 
+      const subject = document.getElementById("subject").value;
+      const message = document.getElementById("message").value;
+      const mailtoLink = `mailto:savannahthorstensen9@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+      window.location.href = mailtoLink; 
+    }
+
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+</body>
 </html>
