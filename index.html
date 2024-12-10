@@ -158,7 +158,7 @@
         </div>
             -->
 
-        <!-- contact form -->
+        <!-- contact form 
         <div class="w3-container">
   <form onsubmit="sendEmail(event)" class="w3-container w3-card-4 w3-padding-16" style="background-color: #FFF3DB; border: none;">
     <h3>Send Me an Email</h3>
@@ -171,6 +171,25 @@
     <button class="w3-button w3-margin-top" type="submit" style="background-color: #F15F61; color: white;">Send Email</button>
   </form>
 </div>
+            -->
+          <!-- centered contact form -->
+            <div class="w3-container">
+  <form onsubmit="sendEmail(event)" class="w3-container w3-card-4 w3-padding-16" 
+        style="background-color: #FFF3DB; border: none; max-width: 500px; margin: auto; text-align: center;">
+    <h3>Send Me an Email</h3>
+    <label for="subject">Subject:</label>
+    <input class="w3-input w3-border" type="text" id="subject" name="subject" placeholder="Enter subject" required 
+           style="background-color: #FFF3DB; border: 1px solid #EA785B; margin-bottom: 15px;">
+
+    <label for="message">Message:</label>
+    <textarea class="w3-input w3-border" id="message" name="message" rows="4" placeholder="Enter your message" required 
+              style="background-color: #FFF3DB; border: 1px solid #EA785B; margin-bottom: 15px;"></textarea>
+
+    <button class="w3-button w3-margin-top" type="submit" 
+            style="background-color: #F15F61; color: white; padding: 10px 20px;">Send Email</button>
+  </form>
+</div>
+
 
        <script>
     function sendEmail(event) {
